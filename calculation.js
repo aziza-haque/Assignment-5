@@ -8,7 +8,6 @@ document.getElementById('triangle-area').addEventListener('click',function(){
     setTextElementValueById('tri',triangleArea);
     const triangle=document.getElementById('triangle');
     triangle.style.display='block';
-
 })
 
 document.getElementById('ellipse-area').addEventListener('click',function(){
