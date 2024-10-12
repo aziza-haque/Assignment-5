@@ -45,10 +45,10 @@
                   <h5 class="card-title">Rectangle</h5>
                   <p class="card-text fs-6 fw-light">Area (A)= w * l</p>
                   <div class="d-flex ">
-                  <input type="text" class="inputsty rounded-1 " placeholder="w"><tab class="tab fw-light">cm</tab>
-                  <input type="text" class="inputsty rounded-1" placeholder="l" ><tab class="tab fw-light ">cm</tab>
+                  <input type="text" id="input-w" class="inputsty rounded-1 " placeholder="w"><tab class="tab fw-light">cm</tab>
+                  <input type="text" id="input-l" class="inputsty rounded-1" placeholder="l" ><tab class="tab fw-light ">cm</tab>
                  </div>
-                  <a href="#" class="btn btn-primary px-5">Calculate</a>
+                  <a href="#" id="rectangle-area" class="btn btn-primary px-5">Calculate</a>
                 </div>
               </div>
           </div>
@@ -59,10 +59,10 @@
                   <h5 class="card-title">Parallelogram</h5>
                   <p class="card-text fs-6 fw-light">Area (A) = b * h</p>
                   <div class="d-flex ">
-                  <input type="text" class="inputsty rounded-1 " placeholder="b"><tab class="tab fw-light">cm</tab>
-                  <input type="text" class="inputsty rounded-1" placeholder="h" ><tab class="tab fw-light ">cm</tab>
+                  <input type="text" id="input-b1" class="inputsty rounded-1 " placeholder="b"><tab class="tab fw-light">cm</tab>
+                  <input type="text" id="input-h1" class="inputsty rounded-1" placeholder="h" ><tab class="tab fw-light ">cm</tab>
                  </div>
-                  <a href="#" class="btn btn-primary px-5">Calculate</a>
+                  <a href="#" id="parallelogram-area" class="btn btn-primary px-5">Calculate</a>
                 </div>
               </div>
           </div>
@@ -70,35 +70,35 @@
             <div class="card " >
                 <div class="card-body" style="padding-bottom:300px ;">
                   <h5 class="card-title"><u>Area Calculation</u></h5>
-                  <ul class="list-group " style="list-style: none;">
+                  <ul class="list-group " style="list-style: none; display: none;">
                     <li class="py-1 lifontsz">
                         <span>1.Triangle</span>
-                        <span>12cm<sup>2</sup></span>
+                        <span> <span id="tri">0</span>cm<sup>2</sup></span>
                         <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                     </li>
                     <li class="py-1 lifontsz">
                       <span>2.Rectangle</span>
-                      <span>12cm<sup>2</sup></span>
+                      <span> <span id="rec">0</span>cm<sup>2</sup></span>
                       <button type="button" class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                   </li>
                     <li class="py-1 lifontsz">
                       <span>3.Parallelogram</span>
-                      <span>12cm<sup>2</sup></span>
+                      <span> <span id="para">0</span>cm<sup>2</sup></span>
                       <button type="button" class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                   </li>
                     <li class="py-1 lifontsz">
                       <span>4.Rombus</span>
-                      <span>12cm<sup>2</sup></span>
+                      <span> <span id="rhom">0</span>cm<sup>2</sup></span>
                       <button type="button" class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                   </li>
                     <li class="py-1 lifontsz">
                       <span>5.Pentagon</span>
-                      <span>12cm<sup>2</sup></span>
+                      <span> <span id="pent">0</span>cm<sup>2</sup></span>
                       <button type="button" class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                   </li>
                     <li class="py-1 lifontsz">
                       <span>6.Ellipse</span>
-                      <span>12cm<sup>2</sup></span>
+                      <span><span id="elli">0</span>cm<sup>2</sup></span>
                       <button type="button" class="btn btn-primary"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Convert to m<sup>2</sup></button>
                   </li>
                 </ul>
@@ -117,10 +117,10 @@
                   <h5 class="card-title">Rombus</h5>
                   <p class="card-text fs-6 fw-light">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
                   <div class="d-flex ">
-                    <input type="text" class="inputsty rounded-1 " placeholder="d1"><tab class="tab fw-light">cm</tab>
-                    <input type="text" class="inputsty rounded-1" placeholder="d2" ><tab class="tab fw-light ">cm</tab>
+                    <input type="text" id="input-e" class="inputsty rounded-1 " placeholder="d1"><tab class="tab fw-light">cm</tab>
+                    <input type="text" id="input-f" class="inputsty rounded-1" placeholder="d2" ><tab class="tab fw-light ">cm</tab>
                    </div>
-                  <a href="#" class="btn btn-primary px-5 mb-5">Calculate</a>
+                  <a href="#" id="rhombus-area" class="btn btn-primary px-5 mb-5">Calculate</a>
                 </div>
               </div>
           </div>
@@ -131,10 +131,10 @@
                   <h5 class="card-title">Pentagon</h5>
                   <p class="card-text fs-6 fw-light">Area (A)= p * b</p>
                   <div class="d-flex ">
-                    <input type="text" class="inputsty rounded-1 " placeholder="p"><tab class="tab fw-light">cm</tab>
-                    <input type="text" class="inputsty rounded-1" placeholder="b" ><tab class="tab fw-light ">cm</tab>
+                    <input type="text" id="input-p" class="inputsty rounded-1 " placeholder="p"><tab class="tab fw-light">cm</tab>
+                    <input type="text" id="input-b2" class="inputsty rounded-1" placeholder="b" ><tab class="tab fw-light ">cm</tab>
                    </div>
-                  <a href="#" class="btn btn-primary px-5">Calculate</a>
+                  <a href="#" id="pentagon-area" class="btn btn-primary px-5">Calculate</a>
                 </div>
               </div>
           </div>
@@ -145,10 +145,10 @@
                   <h5 class="card-title">Ellipse</h5>
                   <p class="card-text fs-6 fw-light">Area (A) = πab</p>
                   <div class="d-flex ">
-                    <input type="text" class="inputsty rounded-1 " placeholder="a"><tab class="tab fw-light">cm</tab>
-                    <input type="text" class="inputsty rounded-1" placeholder="b" ><tab class="tab fw-light ">cm</tab>
+                    <input type="text" id="input-a" class="inputsty rounded-1 " placeholder="a"><tab class="tab fw-light">cm</tab>
+                    <input type="text" id="input-b3" class="inputsty rounded-1" placeholder="b" ><tab class="tab fw-light ">cm</tab>
                    </div>
-                  <a href="#" class="btn btn-primary px-5">Calculate</a>
+                  <a href="#" id="ellipse-area" class="btn btn-primary px-5">Calculate</a>
                 </div>
               </div>
           </div>

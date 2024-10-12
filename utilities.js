@@ -6,3 +6,8 @@ function getInputElementValueById(inputElementId){
     return inputValue;
 }
 
+function setTextElementValueById(elementId,newValue){
+    const textElement=document.getElementById(elementId);
+    textElement.innerText=newValue.toFixed(2);
+}
+
